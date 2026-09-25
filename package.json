@@ -1,0 +1,41 @@
+{
+  "name": "dataset-complete-checker",
+  "version": "1.0.0",
+  "description": "Professional DHIS2 custom app for checking and marking datasets as complete",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ESLINT_CACHE_LOCATION=.eslint-cache d2-app-scripts start",
+    "build": "d2-app-scripts build",
+    "test": "echo \"No tests defined\" && exit 0"
+  },
+  "dependencies": {
+    "@dhis2/app-runtime": "^3.17.0",
+    "@dhis2/cli-app-scripts": "^12.11.0",
+    "@dhis2/data-engine": "^3.17.0",
+    "@dhis2/ui": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+ "author": "MOH South Sudan| HISP South Sudan",
+  "contributors": [
+    "Contributor 1 <waheedmagienology94@gmail.com>",
+    "Contributor 2 <bkose@hispsouthsudan.org>"
+  ]
+}

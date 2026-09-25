@@ -1,0 +1,35 @@
+{
+  "name": "Dataset Completion Checker App",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "Check datasets for data and mark them as completed",
+  "developer": {
+    "name": "MOH and HISP South Sudan"
+  },
+  "launch_path": "index.html",
+  "icons": {
+    "16": "favicon-16x16.png",
+    "32": "favicon-32x32.png",
+    "48": "dhis2-app-icon.png",
+    "128": "img/checker-128.png"
+  },
+  "minDhisVersion": "2.40-SNAPSHOT",
+  "maxDhisVersion": "2.43.1.0",
+  "min_dhis2_version": "2.40-SNAPSHOT",
+  "max_dhis2_version": "2.43.1.0",
+  "dhis2": {
+    "app": {
+      "title": "Dataset Completion Checker App",
+      "description": "Check which datasets have data but are not marked complete, then mark them as completed.",
+      "version": "1.0.0",
+      "type": "app",
+      "minDhis2Version": "2.40-SNAPSHOT",
+      "maxDhis2Version": "2.43.1.0"
+    }
+  },
+  "scope": "./",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1b3a3a",
+  "background_color": "#ffffff"
+}

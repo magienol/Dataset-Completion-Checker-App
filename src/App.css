@@ -1,0 +1,136 @@
+.app-container {
+    max-width: 96%;
+    margin: 0 auto;
+    padding: var(--spacers-dp24, 24px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacers-dp16, 16px);
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacers-dp16, 16px);
+    text-align: center;
+}
+
+.app-logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.main-title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 1000;
+    color: var(--colors-grey900, #212934);
+}
+
+.sub-title,
+.user-info,
+.results-meta {
+    margin: 4px 0 0;
+    color: var(--colors-grey700, #4a5768);
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+
+.card-body {
+    padding: var(--spacers-dp16, 16px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacers-dp16, 16px);
+}
+
+.search-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: var(--spacers-dp16, 16px);
+}
+
+.search-grid > :not(.search-actions) {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.search-actions {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2px;
+}
+
+.results-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacers-dp12, 12px);
+}
+
+.results-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colors-grey900, #212934);
+}
+
+.table-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--spacers-dp16, 16px);
+}
+
+.table-filters > :not(.table-filter-summary) {
+    min-width: 220px;
+    max-width: 320px;
+}
+
+.table-filter-summary {
+    margin: 0;
+    padding-bottom: 6px;
+    color: var(--colors-grey700, #4a5768);
+    font-size: 14px;
+}
+
+.results-table {
+    overflow-x: auto;
+}
+
+.table-page-loader {
+    margin-bottom: var(--spacers-dp8, 8px);
+}
+
+.pagination-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: var(--spacers-dp12, 12px);
+    }
+
+    .app-header {
+        align-items: flex-start;
+    }
+
+    .app-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .search-grid {
+        flex-wrap: wrap;
+    }
+
+    .search-grid > :not(.search-actions) {
+        flex: 1 1 220px;
+    }
+}
